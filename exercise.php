@@ -1,14 +1,15 @@
 <html>
     <body>
         <?php
-        $month = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-        $monthDays = array ('January' => 31, 'February' => 28, 'March' => 31, 'April' => 30, 'May' =>31, 'June' => 31, 'July' => 31, 'August' => 31, 'September' => 30, 'October' => 31, 'November' => 30, 'December' => 31); $i=0;
-        foreach ($monthDays as $item => $days)
-        {
-            //using days
-            echo "$month[$i] - $days <br>";
-            $i++;
-        }echo "<br>";
+       //array declaration
+       $monthDays = array('Splorch' => 23, 'Sploo' => 28, 'Splat' => 2, 'Splatt' => 3, 'Spleen' => 44,
+        'Splune' => 30, 'Spling' => 61, 'Slendo' => 61, 'Sploctember' => 31, 'Splictember' => 31, 'Splanet' => 30, 'TheRest' => 22);
+        print_r("Number of Days:".min($monthDays));
+        echo '</br>';
+        print_r("Name of Shortest Month:".array_search(min($monthDays),$monthDays));
+        echo '</br>';
+        print_r("Number of Days in Year:".array_sum($monthDays));
+        echo '</br>';
         ?>
         </body>
         </html>
